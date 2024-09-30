@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="icon" href="img/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lucky Dev</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-icon">
+            <a href="#"><img src="img/Icon.png" alt="Logo"></a>
+            <div class="nav-title">
+                <a href="#">Lucky Dev</a>
+            </div>
+        </div>
+
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#portafolio">Portafolio</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <button class="nav-toggle" aria-label="Abrir menú">&#9776;</button>
+    </nav>
+    <div class="me" id="inicio">
+        <h1>Diseño y desarrollo Web</h1>
+        <p>Nuestro trabajo esta dedicado a llevar tus ideas a la realidad digital. </p>
+        <p>Nos especializamos en el diseño y desarrollo de sitios web personalizados que no 
+            solo reflejan la identidad de tu marca, sino que también impulsan tu negocio en línea. </p>
+        <p>Ya sea que estés buscando crear una presencia online, optimizar tu sitio existente o 
+            desarrollar una aplicación web avanzada, estamos aquí para ayudarte a lograrlo.</p>
+    </div>
+    <div class="right" id="servicios">
+        <h3>Servicios</h3>
+        <div class="container-S">
+            <div class="servicio">
+                <strong>Desarrollo de páginas web estáticas (HTML y CSS)</strong>
+                <p>Creación de sitios rápidos y accesibles con HTML y CSS, ideales para proyectos simples sin interactividad avanzada.</p>
+            </div>
+            <div class="servicio">
+                <strong>Desarrollo de páginas web interactivas (JavaScript, PHP y SQL)</strong>
+                <p>Implementación de sitios dinámicos con formularios, tiendas en línea y funcionalidades avanzadas usando tecnologías como JavaScript, PHP y SQL.</p>
+            </div>
+            <div class="servicio">
+                <strong>Mantenimientos y actualizaciones</strong>
+                <p>Mantenemos tu sitio actualizado, seguro y con un rendimiento óptimo mediante soporte continuo.</p>
+            </div>
+            <div class="servicio">
+                <strong>Maquetación para sitios web (Diagramas y Mockups)</strong>
+                <p>Diseñamos la estructura visual del sitio mediante maquetas y diagramas, optimizando la experiencia del usuario antes de la implementación.</p>
+            </div>
+            <div class="servicio">
+                <strong>Diseño de bases de datos</strong>
+                <p>Creación de bases de datos eficientes y seguras para gestionar grandes volúmenes de información de forma ágil y estructurada.</p>
+            </div>
+        </div>
+    </div>
+    <div class="left" id="portafolio">
+        <h3>Portafolio</h3>
+        <div class="container-P">
+            <div>
+                <a href="https://luismdnavarro.github.io/LSMKids/"><img src="img/LSM.jpeg" alt="LSMKids" class="sitio"></a>
+            </div>
+            <div>
+                <img src="img/XCloud3.jpeg" alt="XCloud" class="sitio">
+            </div>
+            <div>
+                <img src="img/XCloud1.jpeg" alt="XCloud" class="sitio">
+            </div>
+            <div>
+                <img src="img/XCloud2.jpeg" alt="XCloud" class="sitio">
+            </div>
+        </div>
+    </div>
+    <div class="right" id="contacto">
+        <h3>Contacto</h3>
+        <div class="contacto">
+            <a href="https://www.instagram.com/contact.luckydev/"><img src="img/instagram.png" class="logo" alt="Instagram"> @contact.luckydev</a>
+            <a href="https://www.linkedin.com/in/lucky-dev-bb0389330"><img src="img/linkedin.png" class="logo" alt="Linkedin"> Lucky Dev</a>
+            <a href="mailto:contact.luckydev@gmail.com"><img src="img/correo.png" class="logo" alt="Correo"> contact.luckydev@gmail.com</a>
+        </div>
+    </div>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        
+        navToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('nav-open');
+        });
+    </script>
+</body>
+</html>
